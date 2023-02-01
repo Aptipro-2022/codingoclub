@@ -1,0 +1,30 @@
+#footer{
+    background: #303030;
+    align-items: center;
+    padding: 20px 200px 60px;
+    gap: 60px;
+    color: white;
+}
+.footer-heading{
+    font-weight: 400;
+    font-size: 18px;
+    text-align: center;
+    color: #EFEFEF;
+    padding: 2.5% 0% 5% 0%;
+}
+.footer-newsletter{
+    color: #EFEFEF;
+    text-align: center;
+    font-weight: 500;
+    font-size: 24px;
+    padding: 2.5% 0% 5% 0%;
+}
+
+.footer-bottom h3{
+    font-size: 20px;
+}
+.footer-bottom a{
+    text-decoration: none;
+    color: rgba(239, 239, 239, 0.5);
+    font-size: 20px;
+}

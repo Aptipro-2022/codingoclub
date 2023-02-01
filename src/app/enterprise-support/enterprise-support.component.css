@@ -1,0 +1,16 @@
+.welcome-screen{
+    margin-top: 80px;
+    padding: 10%;
+    text-align: center;
+}
+.welcome-screen button{
+    width: fit-content;
+    background: #1488CC;
+    border-radius: 8px;
+    padding: 12px 24px;
+    gap: 8px;
+    border-width: 0;
+    font-weight: 500;
+    color: #FFFFFF;
+    font-size: 20px;
+}
