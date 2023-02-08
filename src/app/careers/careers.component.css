@@ -1,0 +1,174 @@
+.container-fluid{
+    margin: 0;
+    padding: 0;
+}
+.careers-first{
+    margin-top: 80px;
+    background: linear-gradient(180deg, #94A6C1 3.56%, #FFFFFF 21.32%);
+    overflow: hidden;
+    height: 640px;
+}
+.careers-image1{
+    position: absolute;
+    height: auto;
+}
+.careers-image1 img{
+    position: relative;
+    top: -100px;
+    width: 100%;
+    height: auto;
+    margin: 0;
+    padding: 0;
+}
+.careers-content{
+    padding-top: 2.5%;
+    width: 40%;
+    text-align: center;
+}
+.careers-content h3{
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 36px;
+    background: linear-gradient(45.58deg, #2B32B2 3.16%, #1488CC 95.98%);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.careers-content p{
+    text-align: justify;
+    justify-content: center;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 30px;
+    color: #404040;
+}
+.careers-content button{
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    padding: 8px 12px;
+    gap: 8px;
+    width: 97px;
+    height: 52px;
+    background: #02539A;
+    border-radius: 8px;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 28px;
+    color: #FFFFFF;
+    border-width: 0;
+}
+
+/* Image tiles style started  */
+
+.image-tiles1{
+    position: absolute;
+    margin: 0;
+    padding: 0;
+    width: fit-content;
+}
+.image-tiles1 img{
+    position: relative;
+    top: -380px;
+    left: -28px;
+    width: 120px;
+    height: 120px;
+}
+
+.image-tiles2{
+    position: absolute;
+    margin: 0;
+    padding: 0;
+    width: fit-content;
+}
+.image-tiles2 img{
+    position: relative;
+    top: -300px;
+    left: 235px;
+    width: 80px;
+    height: 80px;
+}
+
+.image-tiles3{
+    position: absolute;
+    margin: 0;
+    padding: 0;
+    width: fit-content;
+}
+.image-tiles3 img{
+    position: relative;
+    top: -180px;
+    left: 75px;
+    width: 120px;
+    height: 120px;
+}
+
+.image-tiles4{
+    position: absolute;
+    margin: 0;
+    padding: 0;
+    width: fit-content;
+}
+.image-tiles4 img{
+    position: relative;
+    top: -100px;
+    left: 275px;
+    width: 100px;
+    height: 100px;
+}
+
+.image-tiles5{
+    position: absolute;
+    margin: 0;
+    padding: 0;
+    width: fit-content;
+}
+.image-tiles5 img{
+    position: relative;
+    top: -380px;
+    left: 1375px;
+    width: 120px;
+    height: 120px;
+}
+
+.image-tiles6{
+    position: absolute;
+    margin: 0;
+    padding: 0;
+    width: fit-content;
+}
+.image-tiles6 img{
+    position: relative;
+    top: -200px;
+    left: 1275px;
+    width: 80px;
+    height: 80px;
+}
+
+
+/* Image tiles style ends  */
+
+.careers-second{
+    position: relative;
+    background: linear-gradient(181.72deg, #FFFFFF 44.94%, #94A6C1 105.19%);
+    height: 700px;
+}
+.careers-second img{
+    width: 100%;
+    height: auto;
+    margin: 0;
+    padding: 0;
+}
+.careers-second-content{
+    align-items: center;
+    text-align: center;
+}
+.careers-second-content h1{
+    font-size: 128px;
+    line-height: 90px;
+    color: #1062AB;
+}
+.careers-second-content p{
+    font-size: 32px;
+    line-height: 90px;
+    color: #404040;
+}
