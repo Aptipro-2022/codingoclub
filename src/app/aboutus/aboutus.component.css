@@ -3,21 +3,23 @@
 }
 .aboutus-first h4{
     font-weight: 600;
-    font-size: 24px;
+    font-size: 20px;
     line-height: 32px;
     text-transform: uppercase;
     color: #404040;
+    margin: 0 0 0 2%;
+    display: inline-block;
 }
 .aboutus-first h2{
-    font-weight: 800;
-    font-size: 52px;
+    font-weight: 700;
+    font-size: 38px;
     line-height: 90px;
     color: #404040;
     align-self: stretch;
 }
 .aboutus-first p{
     font-weight: 500;
-    font-size: 32px;
+    font-size: 24px;
     line-height: 38px;
     align-self: stretch;
     color: rgba(64, 64, 64, 0.75);
@@ -25,6 +27,7 @@
 .aboutus-first img{
     width: 100%;
     height: auto;
+    vertical-align: bottom;
 }
 
 .aboutus-second{
@@ -52,7 +55,7 @@
 }
 .aboutus-third h3{
     font-weight: 500;
-    font-size: 40px;
+    font-size: 32px;
     line-height: 47px;
     color: #404040;
     align-self: stretch;
@@ -60,7 +63,7 @@
 }
 .aboutus-third p{
     font-weight: 400;
-    font-size: 24px;
+    font-size: 20px;
     line-height: 28px;
     color: #404040;
     margin: 2% 0;
@@ -68,7 +71,7 @@
 .aboutus-third a{
     text-decoration: none;
     font-weight: 400;
-    font-size: 24px;
+    font-size: 20px;
     line-height: 28px;
     color: #084F8E;
 }
@@ -78,14 +81,16 @@
 }
 .aboutus-fourth h4{
     font-weight: 600;
-    font-size: 24px;
+    font-size: 20px;
     line-height: 32px;
     text-transform: uppercase;
     color: #404040;
+    margin: 0 0 5% 2%;
+    display: inline-block;
 }
 .aboutus-fourth h2{
     font-weight: 500;
-    font-size: 40px;
+    font-size: 32px;
     line-height: 47px;
     color: #404040;
 }
