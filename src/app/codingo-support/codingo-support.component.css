@@ -1,0 +1,70 @@
+#support-firstscreen{
+    margin: 70px 0 0 0;
+    padding: 0;
+}
+#support-firstscreen img{
+    width: 100%;
+    height: 600px;
+    margin: 0;
+}
+.welcomeimage-text{
+    color: #F2F2F2;
+    position: absolute;
+    top: 250px;
+    left: 100px;
+}
+.welcomeimage-text h2{
+    font-size: 48px;
+    line-height: 90px;
+}
+
+.support-secondscreen{
+    padding: 2.5% 0 7.5% 0;
+}
+.support-secondscreen img{
+    width: 80px;
+    height: 80px;
+}
+
+.support-thirdscreen-content{
+    padding: 40px;
+    gap: 40px;
+    background: #F5F5F5;
+    column-gap: 20px;
+}
+.support-thirdscreen img{
+    width: 120px;
+    height: 120px;
+}
+#row-content{
+    background: #FFFFFF;
+    padding: 40px 0;
+}
+.support-thirdscreen-content button{
+    background: #F5F5F5;
+    border-radius: 4px;
+    border-width: 0;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 23px;
+    padding: 2.5%;
+}
+
+
+#codingo-support-contact{
+    padding: 10% 5%;
+    text-align: center;
+    align-items: center;
+}
+#codingo-support-contact button{
+    width: fit-content;
+    margin: auto;
+    background: #1488CC;
+    border-radius: 8px;
+    border-width: 0;
+    padding: 12px 24px;
+    gap: 8px;
+    font-size: 24px;
+    font-weight: 500;
+    color: #FFFFFF;
+}

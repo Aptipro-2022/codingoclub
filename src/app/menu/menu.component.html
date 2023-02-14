@@ -1,0 +1,140 @@
+
+<header class="header">
+    <nav class="navbar container-fluid navbar-expand-md fixed-top">
+        <a href="#" class="navbar-brand"><img src="../../assets/Codingo Logo.png" alt=""></a>
+        <button class="navbar-toggler ml-auto navbar-toggler-right" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar" (click)="toggleNavbar()" style="float: right; margin-left:auto; margin-right:5px; color:white;">
+            <!-- <span class="navbar-toggler-icon"></span> -->
+            <div class="bar1"></div>
+            <div class="bar2"></div>
+            <div class="bar3"></div>
+        </button>
+        <div class="collapse navbar-collapse" id="collapsibleNavbar" [ngClass]="{ 'show': navbarOpen }">
+            <ul class="navbar-nav ms-auto"> 
+                
+                <!-- OffCanvas Starts -->
+
+                <li class="nav-item">
+                    <a href="" class="nav-link dropdown-toggle" data-toggle="dropdown" (click)="toggleLeftOffcanvas()">Products</a>
+                    <div class="offcanvas-left bg-light p-3" [ngClass]="{ 'open': isLeftMenuOpen }">
+                        <button class="close-button btn btn-danger" (click)="toggleLeftOffcanvas()" *ngIf="isLeftMenuOpen">
+                            <i class="fa fa-times"></i>
+                        </button>
+                        <div class="container" id="offcanvas-left">
+                            <div class="row">
+                                <div class="col-sm-8 col-md-8 col-xs-12">
+                                    <div class="row">
+                                        <h3 style="margin-bottom: 5%;">FEATURED</h3>
+                                        <div class="row" style="margin: 0; padding: 0;">
+                                            <div class="col-sm-6 col-md-6 col-xs-12">
+                                                <div class="col-sm-3 col-md-3">
+                                                    <img src="../../assets/Aptipro Icon.jpg" alt="">
+                                                </div>
+                                                <div class="col-sm-9 col-md-9 col-xs-12">
+                                                    <a href=""><h4>aptipro.in</h4></a>
+                                                    <p>Learn Aptitude from experts</p>
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-6 col-md-6 col-xs-12">
+                                                <div class="col-sm-3 col-md-3">
+                                                    <img src="../../assets/SQL Icon.jpg" alt="">
+                                                </div>
+                                                <div class="col-sm-9 col-md-9 col-xs-12">
+                                                    <a href=""><h4>sqlpro.in</h4></a>
+                                                    <p>Learn SQL from experts</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row" style="margin-top: 5%;">
+                                            <a routerLink="/partner-support"><h3>View all products</h3></a>
+                                        </div>
+                                    </div>
+                                    <div class="row" style="background: #DEEBFF;">
+                                        <h3>OUR NEW PRODUCTS</h3>
+                                        <a href="" style="float:right;"><h3>View All</h3></a>
+                                        <div class="row">
+                                            <div class="col-sm-6 col-md-6 col-xs-12">
+                                                <div class="col-sm-3 col-md-3">
+                                                    <img src="../../assets/Java Icon.png" alt="">
+                                                </div>
+                                                <div class="col-sm-9 col-md-9 col-xs-12">
+                                                    <h4>javapro.in</h4>
+                                                    <p>Learn Java from experts</p>
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-6 col-md-6 col-xs-12">
+                                                <div class="col-sm-3 col-md-3">
+                                                    <img src="../../assets/Python Icon.jpg" alt="">
+                                                </div>
+                                                <div class="col-sm-9 col-md-9 col-xs-12">
+                                                    <h4>pypro.in</h4>
+                                                    <p>Learn Python from experts</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- <div class="col-sm-4 col-md-4 col-xs-12">
+                                    <div class="row">
+                                        <a href=""><h3>BROWSE BY SOLUTION</h3></a>
+                                    </div>
+                                    <div>
+                                        <a href=""><h3>BROWSE BY TEAM TYPE</h3></a>
+                                    </div>
+                                </div> -->
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a href="" class="nav-link dropdown-toggle" data-toggle="dropdown" (click)="toggleRightOffcanvas()">Support</a>
+                    <div class="offcanvas-right bg-light p-3" [ngClass]="{ 'open': isRightMenuOpen }">
+                        <button class="close-button btn btn-danger" (click)="toggleRightOffcanvas()" *ngIf="isRightMenuOpen">
+                            <i class="fa fa-times"></i>
+                        </button>
+                        <div class="container" id="offcanvas-right">
+                            <div class="row">
+                                <div class="col-sm-4 col-md-4 col-xs-12">
+                                    <h3>SUPPORT SERVICES</h3>
+                                    <a routerLink="/enterprise-support"><h4>Enterprise Services</h4></a>
+                                    <p>Personal support for large teams</p>
+                                    <a routerLink="/partner-support"><h4>Partner Support</h4></a>
+                                    <p>Trusted third-party consultant</p>
+                                    <a routerLink="/support"><h4>Codingo Support</h4></a>
+                                    <p>A resource hub for teams and admins</p>
+                                </div>
+                                <div class="col-sm-4 col-md-4 col-xs-12">
+                                    <h3>LEARN & CONNECT</h3>
+                                    <a routerLink="/aboutus"><h4>About US</h4></a>
+                                    <p>Our mission and history</p>
+                                    <a routerLink="/careers"><h4>Careers</h4></a>
+                                    <p>Job opening, values and more</p>
+                                    <a routerLink="/codingo-university"><h4>Codingo University</h4></a>
+                                    <p>Training and certifications for skill levels</p>
+                                    <a routerLink="/"><h4>Codingo Community</h4></a>
+                                    <p>A forum for connecting, sharing and learning</p>
+                                </div>
+                                <div class="col-sm-4 col-md-4 col-xs-12">
+                                    <h3>Work Life Blog</h3>
+                                    <a href="#"><h4>Stories on culture, tech, teams and tips</h4></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+
+                <!-- OffCanvas Ends -->
+            </ul>
+            <!-- <ul class="navbar-nav ml-auto navbar-right">
+                <li class="nav-item">
+                    <a href="" class="nav-link" style="background: #2B32B2;color:white;border-radius: 8px;">Try now</a>
+                </li>
+                <li class="nav-item">
+                    <a href="" class="nav-link">Buy Now</a>
+                </li>
+                <li class="nav-item">
+                    <a href="" class="nav-link">Login</a>
+                </li>
+            </ul> -->
+        </div>
+    </nav>
+</header>

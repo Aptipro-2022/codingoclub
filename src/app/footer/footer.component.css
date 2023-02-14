@@ -1,0 +1,34 @@
+#footer{
+    background: #303030;
+    align-items: center;
+    padding: 20px 200px 60px;
+    gap: 60px;
+    color: white;
+}
+.footer-heading{
+    font-weight: 400;
+    font-size: 16px;
+    text-align: center;
+    color: #EFEFEF;
+    padding: 2.5% 0% 5% 0%;
+}
+.footer-newsletter{
+    color: #EFEFEF;
+    /* text-align: center; */
+    font-weight: 400;
+    font-size: 16px;
+    padding: 2.5% 0% 5% 0%;
+}
+
+.footer-bottom h3{
+    font-size: 18px;
+    font-weight: 400;
+    margin: 0 0 2% 0;
+    padding: 0;
+}
+.footer-bottom a{
+    text-decoration: none;
+    color: rgba(239, 239, 239, 0.5);
+    font-size: 16px;
+    line-height: 40px;
+}

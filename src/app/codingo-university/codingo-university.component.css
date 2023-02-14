@@ -1,0 +1,49 @@
+.university-first{
+    margin-top: 80px;
+    padding: 5% 0;
+}
+.university-first h1{
+    font-size: 52px;
+    line-height: 90px;
+    font-weight: 800;
+    color: #404040;
+}
+.university-first p{
+    color: rgba(64, 64, 64, 0.75);
+    font-size: 32px;
+    line-height: 38px;
+    font-weight: 500;
+}
+.university-first button{
+    background: #1488CC;
+    border-radius: 8px;
+    border-width: 0;
+    padding: 12px 24px;
+    gap: 8px;
+    color: #FFFFFF;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 28px;
+}
+.university-first img{
+    width: 486px;
+    height: 476px;
+}
+
+.university-second{
+    justify-content: center;
+}
+.university-second h3{
+    color: #303030;
+    font-weight: 500;
+    font-size: 40px;
+    line-height: 60px;
+    padding: 0 10%;
+}
+.university-second p{
+    color: rgba(64, 64, 64, 0.8);
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 38px;
+    margin-top: 5%;
+}
