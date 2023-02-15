@@ -1,6 +1,6 @@
 
 <header class="header">
-    <nav class="navbar container navbar-expand-md fixed-top">
+    <nav class="navbar container-fluid navbar-expand-md fixed-top">
         <a href="#" class="navbar-brand"><img src="../../assets/Codingo Logo.png" alt=""></a>
         <button class="navbar-toggler ml-auto navbar-toggler-right" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar" (click)="toggleNavbar()" style="float: right; margin-left:auto; margin-right:5px; color:white;">
             <!-- <span class="navbar-toggler-icon"></span> -->
@@ -16,7 +16,7 @@
                 <li class="nav-item">
                     <a href="" class="nav-link dropdown-toggle" data-toggle="dropdown" (click)="toggleLeftOffcanvas()">Products</a>
                     <div class="offcanvas-left bg-light p-3" [ngClass]="{ 'open': isLeftMenuOpen }">
-                        <button class="close-button btn btn-danger" (click)="toggleLeftOffcanvas()" *ngIf="isLeftMenuOpen">
+                        <button class="close-button btn" (click)="toggleLeftOffcanvas()" *ngIf="isLeftMenuOpen">
                             <i class="fa fa-times"></i>
                         </button>
                         <div class="container" id="offcanvas-left">
@@ -89,7 +89,7 @@
                 <li class="nav-item">
                     <a href="" class="nav-link dropdown-toggle" data-toggle="dropdown" (click)="toggleRightOffcanvas()">Support</a>
                     <div class="offcanvas-right bg-light p-3" [ngClass]="{ 'open': isRightMenuOpen }">
-                        <button class="close-button btn btn-danger" (click)="toggleRightOffcanvas()" *ngIf="isRightMenuOpen">
+                        <button class="close-button btn" (click)="toggleRightOffcanvas()" *ngIf="isRightMenuOpen">
                             <i class="fa fa-times"></i>
                         </button>
                         <div class="container" id="offcanvas-right">
@@ -125,7 +125,7 @@
 
                 <!-- OffCanvas Ends -->
             </ul>
-            <ul class="navbar-nav ml-auto navbar-right">
+            <!-- <ul class="navbar-nav ml-auto navbar-right">
                 <li class="nav-item">
                     <a href="" class="nav-link" style="background: #2B32B2;color:white;border-radius: 8px;">Try now</a>
                 </li>
@@ -135,7 +135,7 @@
                 <li class="nav-item">
                     <a href="" class="nav-link">Login</a>
                 </li>
-            </ul>
+            </ul> -->
         </div>
     </nav>
 </header>

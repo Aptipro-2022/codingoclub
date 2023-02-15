@@ -1,5 +1,11 @@
 .header{
+    
+    z-index: 100;
+}
+.navbar{
+    padding: 0 10%;
     background: #FFFFFF;
+    border-radius: 0;
     border-bottom: 1px solid #031544;
 }
 .navbar-brand img{
@@ -14,7 +20,7 @@
     cursor: pointer;
 }
 .nav-item{
-    margin-top: 20px;
+    margin: 20px 20px 0 0;
 }
 .special-menu{
     background: #031544;
@@ -22,7 +28,7 @@
 
 .offcanvas-left{
     position: fixed;
-    top: 0;
+    /* top: 80; */
     left: 0;
     width: 100%;
     height: auto;
@@ -40,7 +46,9 @@
 .offcanvas-left .close-button {
 position: absolute;
 top: 10px;
-right: 10px;
+right: 20px;
+font-size: 32px;
+font-weight: 400;
 }
 .offcanvas-left img{
     width: 80px;
@@ -49,7 +57,7 @@ right: 10px;
 
 .offcanvas-right{
     position: fixed;
-    top: 0;
+    /* top: 0; */
     left: 0;
     width: 100%;
     height: auto;
@@ -67,5 +75,7 @@ right: 10px;
 .offcanvas-right .close-button {
     position: absolute;
     top: 10px;
-    right: 10px;
-  }
+    right: 20px;
+    font-size: 32px;
+    font-weight: 400;
+}
