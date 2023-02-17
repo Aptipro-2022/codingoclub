@@ -9,15 +9,15 @@
             <div class="bar3"></div>
         </button>
         <div class="collapse navbar-collapse" id="collapsibleNavbar" [ngClass]="{ 'show': navbarOpen }">
-            <ul class="navbar-nav ms-auto"> 
+            <ul class="navbar-nav mx-auto"> 
                 
                 <!-- OffCanvas Starts -->
 
                 <!-- Left off canvas starts -->
 
                 <li class="nav-item">
-                    <a href="" class="nav-link dropdown-toggle" data-toggle="dropdown" (click)="toggleLeftOffcanvas()">Products</a>
-                    <div class="offcanvas-left bg-light p-3" [ngClass]="{ 'open': isLeftMenuOpen }">
+                    <a routerLink="" class="nav-link dropdown-toggle" [ngClass]="{ 'open': isLeftMenuOpen }" data-toggle="dropdown" (click)="toggleLeftOffcanvas()">Products</a>
+                    <div class="offcanvas-left bg-light p-3" [ngClass]="{ 'open': isLeftMenuOpen }" [@slideInOut]="isLeftMenuOpen ? 'in' : 'out'">
                         <button class="close-button btn" (click)="toggleLeftOffcanvas()" *ngIf="isLeftMenuOpen">
                             <i class="fa fa-times"></i>
                         </button>
@@ -27,7 +27,7 @@
                                     <div class="row" style="padding: 2.5% 1%;">
                                         <h3>FEATURED</h3>
                                         <div class="row">
-                                            <div class="col-sm-6 col-md-6 col-xs-12">
+                                            <div class="col-sm-6 col-md-6 col-xs-12 hover-zoom">
                                                 <div class="col-sm-3 col-md-3">
                                                     <img src="../../assets/Aptipro Icon.jpg" alt="">
                                                 </div>
@@ -36,7 +36,7 @@
                                                     <p>Learn Aptitude from experts</p>
                                                 </div>
                                             </div>
-                                            <div class="col-sm-6 col-md-6 col-xs-12">
+                                            <div class="col-sm-6 col-md-6 col-xs-12 hover-zoom">
                                                 <div class="col-sm-3 col-md-3">
                                                     <img src="../../assets/SQL Icon.jpg" alt="">
                                                 </div>
@@ -62,7 +62,7 @@
                                             </div>
                                         </div>
                                         <div class="row" >
-                                            <div class="col-sm-6 col-md-6 col-xs-12">
+                                            <div class="col-sm-6 col-md-6 col-xs-12 hover-zoom">
                                                 <div class="col-sm-3 col-md-3">
                                                     <img src="../../assets/Java Icon.png" alt="">
                                                 </div>
@@ -71,7 +71,7 @@
                                                     <p>Learn Java from experts</p>
                                                 </div>
                                             </div>
-                                            <div class="col-sm-6 col-md-6 col-xs-12">
+                                            <div class="col-sm-6 col-md-6 col-xs-12 hover-zoom">
                                                 <div class="col-sm-3 col-md-3">
                                                     <img src="../../assets/Python Icon.jpg" alt="">
                                                 </div>
@@ -101,8 +101,8 @@
                 <!-- Right off canvas starts -->
 
                 <li class="nav-item">
-                    <a href="" class="nav-link dropdown-toggle" data-toggle="dropdown" (click)="toggleRightOffcanvas()">Support</a>
-                    <div class="offcanvas-right bg-light p-3" [ngClass]="{ 'open': isRightMenuOpen }">
+                    <a href="" class="nav-link dropdown-toggle" [ngClass]="{ 'open': isRightMenuOpen }" data-toggle="dropdown" (click)="toggleRightOffcanvas()">Support</a>
+                    <div class="offcanvas-right bg-light p-3" [ngClass]="{ 'open': isRightMenuOpen }" [@slideInOut]="isRightMenuOpen ? 'in' : 'out'">
                         <button class="close-button btn" (click)="toggleRightOffcanvas()" *ngIf="isRightMenuOpen">
                             <i class="fa fa-times"></i>
                         </button>
@@ -135,21 +135,23 @@
                             </div>
                         </div>
                     </div>
+                    <div class="overlay" [hidden]="!isLeftMenuOpen"></div>
+                    <div class="overlay" [hidden]="!isRightMenuOpen"></div>
                 </li>
 
                 <!-- Right off canvas ends -->
-                    <!-- just comment -->
+
                 <!-- OffCanvas Ends -->
             </ul>
-            <ul class="navbar-nav ml-auto navbar-right">
-                <li class="nav-item">
-                    <a href="" class="nav-link" style="background: #2B32B2;color:white;border-radius: 8px;">Try now</a>
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item" routerLinkActive="active">
+                    <a routerLink="/trynow" class="nav-link" style="background: #2B32B2;color:white;border-radius: 8px;">Try now</a>
                 </li>
-                <li class="nav-item">
-                    <a href="" class="nav-link">Buy Now</a>
+                <li class="nav-item" routerLinkActive="active">
+                    <a routerLink="/buynow" class="nav-link">Buy Now</a>
                 </li>
-                <li class="nav-item">
-                    <a href="" class="nav-link">Login</a>
+                <li class="nav-item" routerLinkActive="active">
+                    <a routerLink="/login" class="nav-link">Login</a>
                 </li>
             </ul>
         </div>
