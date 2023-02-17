@@ -13,6 +13,8 @@
                 
                 <!-- OffCanvas Starts -->
 
+                <!-- Left off canvas starts -->
+
                 <li class="nav-item">
                     <a href="" class="nav-link dropdown-toggle" data-toggle="dropdown" (click)="toggleLeftOffcanvas()">Products</a>
                     <div class="offcanvas-left bg-light p-3" [ngClass]="{ 'open': isLeftMenuOpen }">
@@ -21,8 +23,8 @@
                         </button>
                         <div class="container" id="offcanvas-left">
                             <div class="row">
-                                <div class="col-sm-8 col-md-8 col-xs-12">
-                                    <div class="row">
+                                <div class="col-sm-8 col-md-8 col-xs-12" style="transition: all 0.3s ease;">
+                                    <div class="row" style="padding: 2.5% 1%;">
                                         <h3>FEATURED</h3>
                                         <div class="row">
                                             <div class="col-sm-6 col-md-6 col-xs-12">
@@ -44,14 +46,22 @@
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="row">
-                                            <a href=""><h3>View all products</h3></a>
+                                        <div class="row" style="margin: 5% 0 0 0;">
+                                            <a href="">
+                                                <h3>View All Products <i class="fa fa-arrow-right"></i></h3>
+                                            </a>
                                         </div>
                                     </div>
-                                    <div class="row">
-                                        <h3>OUR NEW PRODUCTS</h3>
-                                        <a href="" style="float:right;"><h3>View All</h3></a>
-                                        <div class="row">
+                                    <div class="row" style="background: #DEEBFF; border-radius: 10px; padding: 2.5% 1%;">
+                                        <div class="row" style="margin: 0 1%;">
+                                            <div class="col-sm-6 col-md-6 col-xs-12">
+                                                <h3>OUR NEW PRODUCTS</h3>
+                                            </div>
+                                            <div class="col-sm-6 col-md-6 col-xs-12" style="padding-right: 5%;">
+                                                <a href="" style="float:right;"><h3>View All     <i class="fa fa-arrow-right" style="margin-left: 0;"></i></h3></a>
+                                            </div>
+                                        </div>
+                                        <div class="row" >
                                             <div class="col-sm-6 col-md-6 col-xs-12">
                                                 <div class="col-sm-3 col-md-3">
                                                     <img src="../../assets/Java Icon.png" alt="">
@@ -74,17 +84,21 @@
                                     </div>
                                 </div>
                                 <div class="col-sm-4 col-md-4 col-xs-12">
-                                    <div class="row">
+                                    <!-- <div class="row">
                                         <a href=""><h3>BROWSE BY SOLUTION</h3></a>
                                     </div>
                                     <div>
                                         <a href=""><h3>BROWSE BY TEAM TYPE</h3></a>
-                                    </div>
+                                    </div> -->
                                 </div>
                             </div>
                         </div>
                     </div>
                 </li>
+
+                <!-- Left off canvas ends -->
+
+                <!-- Right off canvas starts -->
 
                 <li class="nav-item">
                     <a href="" class="nav-link dropdown-toggle" data-toggle="dropdown" (click)="toggleRightOffcanvas()">Support</a>
@@ -96,25 +110,25 @@
                             <div class="row">
                                 <div class="col-sm-4 col-md-4 col-xs-12">
                                     <h3>SUPPORT SERVICES</h3>
-                                    <a href="enterprise-support"><h4>Enterprise Services</h4></a>
+                                    <a routerLink="/enterprise-support"><h4>Enterprise Services</h4></a>
                                     <p>Personal support for large teams</p>
-                                    <a href="partner-support"><h4>Partner Support</h4></a>
+                                    <a routerLink="/partner-support"><h4>Partner Support</h4></a>
                                     <p>Trusted third-party consultant</p>
-                                    <a href="#"><h4>Codingo Support</h4></a>
+                                    <a routerLink="/support"><h4>Codingo Support</h4></a>
                                     <p>A resource hub for teams and admins</p>
                                 </div>
-                                <div class="col-sm-4 col-md-4 col-xs-12">
+                                <div class="col-sm-4 col-md-4 col-xs-12" style="border-right: 1px solid grey;">
                                     <h3>LEARN & CONNECT</h3>
-                                    <a href="aboutus"><h4>About US</h4></a>
+                                    <a routerLink="/aboutus"><h4>About US</h4></a>
                                     <p>Our mission and history</p>
-                                    <a href="careers"><h4>Careers</h4></a>
+                                    <a routerLink="/careers"><h4>Careers</h4></a>
                                     <p>Job opening, values and more</p>
-                                    <a href="university"><h4>Codingo University</h4></a>
+                                    <a routerLink="/university"><h4>Codingo University</h4></a>
                                     <p>Training and certifications for skill levels</p>
                                     <a href="#"><h4>Codingo Community</h4></a>
                                     <p>A forum for connecting, sharing and learning</p>
                                 </div>
-                                <div class="col-sm-4 col-md-4 col-xs-12">
+                                <div class="col-sm-4 col-md-4 col-xs-12" style="padding-left: 2.5%;">
                                     <h3>Work Life Blog</h3>
                                     <a href="#"><h4>Stories on culture, tech, teams and tips</h4></a>
                                 </div>
@@ -123,9 +137,11 @@
                     </div>
                 </li>
 
+                <!-- Right off canvas ends -->
+
                 <!-- OffCanvas Ends -->
             </ul>
-            <!-- <ul class="navbar-nav ml-auto navbar-right">
+            <ul class="navbar-nav ml-auto navbar-right">
                 <li class="nav-item">
                     <a href="" class="nav-link" style="background: #2B32B2;color:white;border-radius: 8px;">Try now</a>
                 </li>
@@ -135,7 +151,7 @@
                 <li class="nav-item">
                     <a href="" class="nav-link">Login</a>
                 </li>
-            </ul> -->
+            </ul>
         </div>
     </nav>
 </header>
