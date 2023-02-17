@@ -1,16 +1,17 @@
 .header{
-    
-    z-index: 100;
+    z-index: 1000;
 }
 .navbar{
     padding: 0 10%;
     background: #FFFFFF;
     border-radius: 0;
     border-bottom: 1px solid #031544;
+    height: 70px;
 }
 .navbar-brand img{
-    width: 165px;
-    height: 50px;
+    width: 145px;
+    height: 40px;
+    margin: 5% 0 0 0;
 }
 
 .navbar-nav a{
@@ -20,7 +21,26 @@
     cursor: pointer;
 }
 .nav-item{
-    margin: 20px 20px 0 0;
+    margin: 10px 20px 0 0;
+}
+.nav-link{
+    padding: 7.5% 15px;
+    font-weight: 500;
+}
+.nav-link:hover{
+    background-color: #2B32B2;
+    color: white;
+    border-radius: 10px;
+}
+a.dropdown-toggle.open{
+    background-color: #2B32B2;
+    color: white;
+    border-radius: 10px;
+}
+li.active{
+    background-color: #2B32B2;
+    color: white;
+    border-radius: 10px;
 }
 .special-menu{
     background: #031544;
@@ -32,7 +52,7 @@
     left: 0;
     width: 100%;
     height: auto;
-    z-index: 999;
+    z-index: 100;
     display: none;
     border-top: 1px solid #031544;
 }
@@ -68,6 +88,7 @@
 }
 .offcanvas-left.open {
     display: block;
+    transition: all 1s ease;
 }
 
 .offcanvas-left .close-button {
@@ -122,4 +143,32 @@ font-weight: 400;
 }
 #offcanvas-right p{
     font-size: 12px;
+}
+
+
+.slideInOut {
+    transition: transform 0.1s ease;
+}
+
+.slideInOut.out {
+    transform: translateY(-100%);
+}
+
+.slideInOut.in {
+    transform: translateY(0);
+}
+.overlay{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #606060; /* semi-transparent black */
+    opacity: 0.7;
+    z-index: 99; /* make sure it's on top of everything else */
+}
+
+.hover-zoom:hover{
+    transform: scale(1.1);
+    transition: all 0.3s ease;
 }
