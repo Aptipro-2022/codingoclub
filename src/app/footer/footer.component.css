@@ -1,16 +1,16 @@
 #footer{
     background: #303030;
     align-items: center;
-    padding: 20px 200px 60px;
+    padding: 20px 200px 20px;
     gap: 60px;
     color: white;
 }
 .footer-heading{
     font-weight: 400;
-    font-size: 16px;
+    font-size: 14px;
     text-align: center;
     color: #EFEFEF;
-    padding: 2.5% 0% 5% 0%;
+    padding: 2.5% 0% 2.5% 0%;
 }
 .footer-newsletter{
     color: #EFEFEF;
