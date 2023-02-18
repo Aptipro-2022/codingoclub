@@ -2,22 +2,35 @@
     margin: 0;
 }
 #welcome-screen{
-    padding: 120px 10px 60px 10px;
+    padding: 80px 10px 60px 10px;
     background: #FFFFFF;
     margin: 0;
     height: auto;
 }
-#welcome-image img{
-    width: 100%;
-    height: auto;
-    margin: 0;
-    padding: 0;
-}
-#welcome-text{
-    padding: 5% 5% 5% 6%;
-}
 
-/* Second screen styles */
+/* welcome-screen styles */
+.welcome-text{
+    background-image: url("../../assets/homepage/homepage001.svg");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-position: 150px 10px;
+    height: 70vh;
+    padding-top: 20px;
+}
+.welcome-text h1{
+    position: relative;
+    width: 30%;
+    top: 25%;
+    left: 10%;
+    font-size: 32px;
+    line-height: 60px;
+    font-weight: 800;  
+    color: #404040;
+}
+/* welcome screen styles end */
+
+
+/* Second screen styles starts */
 
 #secondscreen-heading{
     text-align: center;
@@ -27,9 +40,14 @@
     margin: 0 auto;
     padding: 5% 0% 5% 0%;
 }
+#second-screen a{
+    text-decoration: none;
+    color: black;
+}
 #second-screen h3{
     margin: 0;
     padding: 0;
+    font-weight: 500;
 }
 .second-left-row{
     margin: auto;
@@ -39,12 +57,27 @@
     width: 60px;
     height: 60px;
 }
+#secondscreen-image{
+    position: relative;
+}
 #secondscreen-image img{
     width: 100%;
-    height: 70%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+}
+#secondscreen-image img.active{
+    opacity: 1;
+}
+.hover-zoom:hover{
+    transform: scale(1.1);
+    transition: all 0.3s ease;
 }
 
-/* Second screen styles */
+/* Second screen styles ends */
 
 /* third screen styles */
 

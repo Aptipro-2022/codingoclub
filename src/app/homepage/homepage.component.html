@@ -3,14 +3,19 @@
 
 <div class="container-fluid" id="welcome-screen">
     <div class="row">
-        <div class="col-sm-6 col-md-6 col-xs-12" id="welcome-text">
+        <div class="welcome-text">
+            <h1>
+                When everything is personalized and fun today, why isn’t learning?
+            </h1>
+        </div>
+        <!-- <div class="col-sm-6 col-md-6 col-xs-12" id="welcome-text">
             <h1 style="font-weight: 800; font-size: 42px; line-height: 90px; color: #404040;">
                 When everything is personalized and fun today, why isn’t learning?
             </h1>
         </div>
         <div class="col-sm-6 col-md-6 col-xs-12" id="welcome-image">
             <img src="../../assets/homepage/homepage 001.svg" alt="">
-        </div>
+        </div> -->
     </div>
 </div>
 <!-- Welcome screen ends -->
@@ -18,49 +23,50 @@
 <!-- Second screen starts -->
 <div class="container" id="second-screen">
     <div class="row" id="secondscreen-heading">
-        <h2 style="font-size: 42px;">Our Solutions lead the way you learn</h2>
+        <h2 style="font-size: 32px;">Our Solutions lead the way you learn</h2>
     </div>
     <div class="row">
         <div class="col-sm-6 col-md-6 col-xs-12">
-            <div class="row second-left-row">
+            <div class="row second-left-row hover-zoom">
                 <div class="col-sm-2 col-md-2">
                     <img src="../../assets/Aptipro Icon.jpg" alt="">
                 </div>
                 <div class="col-sm-8 col-md-8">
-                    <h3>aptipro.in</h3>
+                    <a href=""><h3>aptipro.in</h3></a>
                     <p>Learn aptitude at ease & crack interviews like pro</p> 
                 </div>
             </div>
-            <div class="row second-left-row">
+            <div class="row second-left-row hover-zoom">
                 <div class="col-sm-2 col-md-2">
                     <img src="../../assets/SQL Icon.jpg" alt="">
                 </div>
                 <div class="col-sm-8 col-md-8">
-                    <h3>sqlpro.in</h3>
+                    <a href=""><h3>sqlpro.in</h3></a>
                     <p>Learn SQL from experts & get your dream job</p> 
                 </div>
             </div>
-            <div class="row second-left-row">
+            <div class="row second-left-row hover-zoom">
                 <div class="col-sm-2 col-md-2">
                     <img src="../../assets/Java Icon.png" alt="">
                 </div>
                 <div class="col-sm-8 col-md-8">
-                    <h3>javapro.in</h3>
+                    <a href=""><h3>javapro.in</h3></a>
                     <p>Learn Java from experts & become a developer</p> 
                 </div>
             </div>
-            <div class="row second-left-row">
+            <div class="row second-left-row hover-zoom">
                 <div class="col-sm-2 col-md-2">
                     <img src="../../assets/Python Icon.jpg" alt="">
                 </div>
                 <div class="col-sm-8 col-md-8">
-                    <h3>pypro.in</h3>
+                    <a href=""><h3>pypro.in</h3></a>
                     <p>Learn Python from experts & become a developer</p> 
                 </div>
             </div>
         </div>
         <div class="col-sm-6 col-md-6 col-xs-12" id="secondscreen-image">
-            <img src="../../assets/homepage/home page 003.svg" alt="">
+            <img *ngFor="let image of images; let i = index" [src]="image.src" [class.active]="i === currentImageIndex" alt="">
+            <!-- <img src="../../assets/homepage/home page 003.svg" alt=""> -->
         </div>
     </div>
 </div>

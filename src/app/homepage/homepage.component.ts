@@ -7,9 +7,20 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HomepageComponent implements OnInit {
 
+  images = [
+    { src: '/assets/homepage/State=Stats-aptipro.svg' },
+    { src: '/assets/homepage/State=Blogs-Aptipro.svg' },
+    { src: '/assets/homepage/State=SQLpro.svg' }
+  ];
+
+  currentImageIndex = 0;
+
   constructor() { }
 
-  ngOnInit(): void {
+  ngOnInit() {
+    setInterval(() => {
+      this.currentImageIndex = (this.currentImageIndex + 1) % this.images.length;
+    }, 2000);
   }
 
 }
