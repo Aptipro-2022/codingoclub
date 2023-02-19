@@ -1,40 +1,61 @@
 #support-firstscreen{
-    margin: 80px 0 0 0;
+    margin: 0 0 0 0;
     padding: 0;
 }
 #support-firstscreen img{
     width: 100%;
-    height: 600px;
+    height: 100vh;
     margin: 0;
 }
 .welcomeimage-text{
     color: #F2F2F2;
     position: absolute;
     top: 250px;
-    left: 100px;
+    left: 180px;
 }
 .welcomeimage-text h2{
-    font-size: 48px;
-    line-height: 90px;
+    font-size: 32px;
+    line-height: 60px;
 }
 
 .support-secondscreen{
     padding: 2.5% 0 7.5% 0;
 }
 .support-secondscreen img{
-    width: 80px;
-    height: 80px;
+    margin-left: 30%;
+    width: 60px;
+    height: 60px;
+    border-radius: 8px;
+}
+.support-secondscreen p{
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 45px;
+    float: left;
+}
+.hover-zoom{
+    padding: 1%;
+}
+.hover-zoom:hover{
+    transform: scale(1.1);
+    transition: all 0.3s ease;
+    background-color: rgb(219, 213, 213);
+    border-radius: 10px;
 }
 
 .support-thirdscreen-content{
-    padding: 40px;
+    padding: 20px;
     gap: 40px;
     background: #F5F5F5;
     column-gap: 20px;
 }
 .support-thirdscreen img{
-    width: 120px;
-    height: 120px;
+    width: 100px;
+    height: 100px;
+}
+.support-thirdscreen-content h3{
+    font-size: 20px;
+    font-weight: 500;
 }
 #row-content{
     background: #FFFFFF;

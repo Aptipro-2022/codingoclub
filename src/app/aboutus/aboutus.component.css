@@ -1,9 +1,10 @@
 .aboutus-first{
-    margin-top: 80px;
+    transform: scale(0.9);
+    margin: auto;
 }
 .aboutus-first h4{
     font-weight: 600;
-    font-size: 20px;
+    font-size: 18px;
     line-height: 32px;
     text-transform: uppercase;
     color: #404040;
@@ -12,10 +13,11 @@
 }
 .aboutus-first h2{
     font-weight: 700;
-    font-size: 38px;
+    font-size: 32px;
     line-height: 90px;
     color: #404040;
     align-self: stretch;
+    margin: 0;
 }
 .aboutus-first p{
     font-weight: 500;
@@ -25,9 +27,11 @@
     color: rgba(64, 64, 64, 0.75);
 }
 .aboutus-first img{
+    position: relative;
     width: 100%;
     height: auto;
     vertical-align: bottom;
+    margin: 0;
 }
 
 .aboutus-second{
@@ -81,7 +85,7 @@
 }
 .aboutus-fourth h4{
     font-weight: 600;
-    font-size: 20px;
+    font-size: 16px;
     line-height: 32px;
     text-transform: uppercase;
     color: #404040;
@@ -90,13 +94,13 @@
 }
 .aboutus-fourth h2{
     font-weight: 500;
-    font-size: 32px;
+    font-size: 28px;
     line-height: 47px;
     color: #404040;
 }
 .aboutus-fourth img{
-    width: 200px;
-    height: 200px;
+    width: 180px;
+    height: 180px;
 }
 .tiles-text{
     font-weight: 400;
@@ -104,4 +108,5 @@
     line-height: 28px;
     text-align: center;
     color: #404040;
+    width: 180px;
 }
