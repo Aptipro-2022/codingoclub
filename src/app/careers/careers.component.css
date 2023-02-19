@@ -3,7 +3,7 @@
     padding: 0;
 }
 .careers-first{
-    margin-top: 80px;
+    margin-top: 60px;
     background: linear-gradient(180deg, #94A6C1 3.56%, #FFFFFF 21.32%);
     overflow: hidden;
     height: 640px;
@@ -28,14 +28,13 @@
 .careers-content h3{
     font-weight: 700;
     font-size: 36px;
-    line-height: 36px;
+    line-height: 42px;
     background: linear-gradient(45.58deg, #2B32B2 3.16%, #1488CC 95.98%);
     background-clip: text;
     -webkit-text-fill-color: transparent;
 }
 .careers-content p{
-    text-align: justify;
-    justify-content: center;
+    text-align: center;
     font-weight: 400;
     font-size: 16px;
     line-height: 30px;
@@ -45,15 +44,15 @@
     justify-content: center;
     align-items: center;
     margin: auto;
-    padding: 8px 12px;
+    padding: 8px 8px;
     gap: 8px;
     width: 97px;
-    height: 52px;
+    height: 42px;
     background: #02539A;
     border-radius: 8px;
     font-weight: 500;
     font-size: 18px;
-    line-height: 28px;
+    /* line-height: 28px; */
     color: #FFFFFF;
     border-width: 0;
 }
@@ -125,7 +124,7 @@
 .image-tiles5 img{
     position: relative;
     top: -380px;
-    left: 1375px;
+    left: 1175px;
     width: 120px;
     height: 120px;
 }
@@ -139,11 +138,80 @@
 .image-tiles6 img{
     position: relative;
     top: -200px;
-    left: 1275px;
+    left: 1125px;
     width: 80px;
     height: 80px;
 }
 
+.image-tiles7{
+    position: absolute;
+    margin: 0;
+    padding: 0;
+    width: fit-content;
+}
+.image-tiles7 img{
+    position: relative;
+    top: -10px;
+    left: 180px;
+    width: 40px;
+    height: 40px;
+}
+
+.image-tiles8{
+    position: absolute;
+    margin: 0;
+    padding: 0;
+    width: fit-content;
+}
+.image-tiles8 img{
+    position: relative;
+    top: -50px;
+    left: 10px;
+    width: 40px;
+    height: 40px;
+}
+
+.image-tiles9{
+    position: absolute;
+    margin: 0;
+    padding: 0;
+    width: fit-content;
+}
+.image-tiles9 img{
+    position: relative;
+    top: -340px;
+    left: 1050px;
+    width: 40px;
+    height: 40px;
+}
+
+.image-tiles10{
+    position: absolute;
+    margin: 0;
+    padding: 0;
+    width: fit-content;
+}
+.image-tiles10 img{
+    position: relative;
+    top: -360px;
+    left: 1000px;
+    width: 20px;
+    height: 20px;
+}
+
+.image-tiles11{
+    position: absolute;
+    margin: 0;
+    padding: 0;
+    width: fit-content;
+}
+.image-tiles11 img{
+    position: relative;
+    top: -230px;
+    left: 390px;
+    width: 35px;
+    height: 35px;
+}
 
 /* Image tiles style ends  */
 
@@ -166,11 +234,11 @@
     font-size: 128px;
     line-height: 90px;
     color: #1062AB;
-    font-family: 'Racing Sans One';
+    font-family: 'Racing';
     font-style: normal;
 }
 .careers-second-content p{
     font-size: 32px;
-    line-height: 90px;
+    line-height: 70px;
     color: #404040;
 }

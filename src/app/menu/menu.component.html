@@ -16,7 +16,7 @@
                 <!-- Left off canvas starts -->
 
                 <li class="nav-item">
-                    <a routerLink="" class="nav-link dropdown-toggle" [ngClass]="{ 'open': isLeftMenuOpen }" data-toggle="dropdown" (click)="toggleLeftOffcanvas()">Products</a>
+                    <a class="nav-link dropdown-toggle" [ngClass]="{ 'open': isLeftMenuOpen }" data-toggle="dropdown" (click)="toggleLeftOffcanvas()">Products</a>
                     <div class="offcanvas-left bg-light p-3" [ngClass]="{ 'open': isLeftMenuOpen }" [@slideInOut]="isLeftMenuOpen ? 'in' : 'out'">
                         <button class="close-button btn" (click)="toggleLeftOffcanvas()" *ngIf="isLeftMenuOpen">
                             <i class="fa fa-times"></i>
