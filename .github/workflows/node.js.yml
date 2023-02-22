@@ -32,7 +32,7 @@ jobs:
       uses: jakejarvis/s3-sync-action@v0.5.1
       
       env:
-        AWS_S3_BUCKET: 'codingo-club'
+        AWS_S3_BUCKET: 'www.codingo.club'
         AWS_ACCESS_KEY_ID: ${{ secrets.AWS_SECRET_KEY_ID }}
         AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
         AWS_REGION: 'ap-northeast-1'   # optional: defaults to us-east-1
