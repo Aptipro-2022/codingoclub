@@ -2,6 +2,7 @@ import { CUSTOM_ELEMENTS_SCHEMA, NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
+import { RouterModule } from '@angular/router';
 import { AppComponent } from './app.component';
 import { HomepageComponent } from './homepage/homepage.component';
 import { FooterComponent } from './footer/footer.component';
@@ -18,6 +19,7 @@ import { CodingoUniversityComponent } from './codingo-university/codingo-univers
 import { AboutusComponent } from './aboutus/aboutus.component';
 import { PartnerSupportComponent } from './partner-support/partner-support.component';
 import { CareersComponent } from './careers/careers.component';
+import { ClickOutsideModule } from 'ng-click-outside';
 
 
 @NgModule({
@@ -41,7 +43,8 @@ import { CareersComponent } from './careers/careers.component';
     MatButtonModule,
     MatIconModule,
     MatSidenavModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    ClickOutsideModule
   ],
   providers: [],
   bootstrap: [AppComponent]
