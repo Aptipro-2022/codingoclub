@@ -1,6 +1,6 @@
 
 <header class="header">
-    <nav class="navbar container-fluid navbar-expand-md fixed-top">
+    <nav class="navbar container-fluid navbar-expand-md fixed-top" [ngClass]="headerClass">
         <a href="#" class="navbar-brand"><img src="../../assets/Codingo Logo.png" alt=""></a>
         <button class="navbar-toggler ml-auto navbar-toggler-right" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar" (click)="toggleNavbar()" style="float: right; margin-left:auto; margin-right:5px; color:white;">
             <!-- <span class="navbar-toggler-icon"></span> -->
@@ -28,22 +28,26 @@
                                         <h3>FEATURED</h3>
                                         <div class="row">
                                             <div class="col-sm-6 col-md-6 col-xs-12 hover-zoom">
-                                                <div class="col-sm-3 col-md-3">
-                                                    <img src="../../assets/Aptipro Icon.jpg" alt="">
-                                                </div>
-                                                <div class="col-sm-9 col-md-9 col-xs-12">
-                                                    <h4>aptipro.in</h4>
-                                                    <p>Learn Aptitude from experts</p>
-                                                </div>
+                                                <a href="www.aptipro.in" target="_blank">
+                                                    <div class="col-sm-3 col-md-3">
+                                                        <img src="../../assets/Aptipro Icon.jpg" alt="">
+                                                    </div>
+                                                    <div class="col-sm-9 col-md-9 col-xs-12">
+                                                        <h4>aptipro.in</h4>
+                                                        <p>Learn Aptitude from experts</p>
+                                                    </div>
+                                                </a>
                                             </div>
                                             <div class="col-sm-6 col-md-6 col-xs-12 hover-zoom">
-                                                <div class="col-sm-3 col-md-3">
-                                                    <img src="../../assets/SQL Icon.jpg" alt="">
-                                                </div>
-                                                <div class="col-sm-9 col-md-9 col-xs-12">
-                                                    <h4>sqlpro.in</h4>
-                                                    <p>Learn SQL from experts</p>
-                                                </div>
+                                                <a href="www.sqlpro.in" target="_blank">
+                                                    <div class="col-sm-3 col-md-3">
+                                                        <img src="../../assets/SQL Icon.jpg" alt="">
+                                                    </div>
+                                                    <div class="col-sm-9 col-md-9 col-xs-12">
+                                                        <h4>sqlpro.in</h4>
+                                                        <p>Learn SQL from experts</p>
+                                                    </div>
+                                                </a>
                                             </div>
                                         </div>
                                         <div class="row" style="margin: 5% 0 0 0;">
@@ -61,8 +65,8 @@
                                                 <a href="" style="float:right;"><h3>View All     <i class="fa fa-arrow-right" style="margin-left: 0;"></i></h3></a>
                                             </div>
                                         </div>
-                                        <div class="row" >
-                                            <div class="col-sm-6 col-md-6 col-xs-12 hover-zoom">
+                                        <div class="row hover-zoom" >
+                                            <div class="col-sm-6 col-md-6 col-xs-12">
                                                 <div class="col-sm-3 col-md-3">
                                                     <img src="../../assets/Java Icon.png" alt="">
                                                 </div>
@@ -71,7 +75,7 @@
                                                     <p>Learn Java from experts</p>
                                                 </div>
                                             </div>
-                                            <div class="col-sm-6 col-md-6 col-xs-12 hover-zoom">
+                                            <div class="col-sm-6 col-md-6 col-xs-12">
                                                 <div class="col-sm-3 col-md-3">
                                                     <img src="../../assets/Python Icon.jpg" alt="">
                                                 </div>
@@ -110,22 +114,22 @@
                             <div class="row">
                                 <div class="col-sm-4 col-md-4 col-xs-12">
                                     <h3>SUPPORT SERVICES</h3>
-                                    <a routerLink="/enterprise-support"><h4>Enterprise Services</h4></a>
+                                    <a routerLink="/enterprise-support" routerLinkActive="active" (click)="closeRightOffCanvas()">Enterprise Services</a>
                                     <p>Personal support for large teams</p>
-                                    <a routerLink="/partner-support"><h4>Partner Support</h4></a>
+                                    <a routerLink="/partner-support" routerLinkActive="active" (click)="closeRightOffCanvas()">Partner Support</a>
                                     <p>Trusted third-party consultant</p>
-                                    <a routerLink="/support"><h4>Codingo Support</h4></a>
+                                    <a routerLink="/support" routerLinkActive="active" (click)="closeRightOffCanvas()">Codingo Support</a>
                                     <p>A resource hub for teams and admins</p>
                                 </div>
                                 <div class="col-sm-4 col-md-4 col-xs-12" style="border-right: 1px solid grey;">
                                     <h3>LEARN & CONNECT</h3>
-                                    <a routerLink="/aboutus"><h4>About US</h4></a>
+                                    <a routerLink="/aboutus" routerLinkActive="active" (click)="closeRightOffCanvas()">About US</a>
                                     <p>Our mission and history</p>
-                                    <a routerLink="/careers"><h4>Careers</h4></a>
+                                    <a routerLink="/careers" routerLinkActive="active" (click)="closeRightOffCanvas()">Careers</a>
                                     <p>Job opening, values and more</p>
-                                    <a routerLink="/university"><h4>Codingo University</h4></a>
+                                    <a routerLink="/university" routerLinkActive="active" (click)="closeRightOffCanvas()">Codingo University</a>
                                     <p>Training and certifications for skill levels</p>
-                                    <a href="#"><h4>Codingo Community</h4></a>
+                                    <a routerLink="/community" routerLinkActive="active" (click)="closeRightOffCanvas()">Codingo Community</a>
                                     <p>A forum for connecting, sharing and learning</p>
                                 </div>
                                 <div class="col-sm-4 col-md-4 col-xs-12" style="padding-left: 2.5%;">
@@ -135,8 +139,8 @@
                             </div>
                         </div>
                     </div>
-                    <div class="overlay" [hidden]="!isLeftMenuOpen"></div>
-                    <div class="overlay" [hidden]="!isRightMenuOpen"></div>
+                    <div class="overlay" [hidden]="!isLeftMenuOpen" (click)="closeLeftOffCanvas()"></div>
+                    <div class="overlay" [hidden]="!isRightMenuOpen" (click)="closeRightOffCanvas()"></div>
                 </li>
 
                 <!-- Right off canvas ends -->

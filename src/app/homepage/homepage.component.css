@@ -40,10 +40,6 @@
     margin: 0 auto;
     padding: 5% 0% 5% 0%;
 }
-#second-screen a{
-    text-decoration: none;
-    color: black;
-}
 #second-screen h3{
     margin: 0;
     padding: 0;
@@ -72,9 +68,16 @@
 #secondscreen-image img.active{
     opacity: 1;
 }
+.hover-zoom a{
+    color: black;
+    text-decoration: none;
+}
 .hover-zoom:hover{
     transform: scale(1.1);
     transition: all 0.3s ease;
+}
+.hover-zoom:hover a{
+    color: blue;
 }
 
 /* Second screen styles ends */
@@ -219,6 +222,10 @@
     padding-bottom: 5%;
     align-items: center;
     text-align: center;
+    background-image: url('../../assets/homepage/CareerSection.png');
+    background-color: white;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 #sixth-screen img{
     width: 100%;

@@ -1,6 +1,5 @@
 .aboutus-first{
-    transform: scale(0.9);
-    margin: auto;
+    margin: 0 auto;
 }
 .aboutus-first h4{
     font-weight: 600;
@@ -21,8 +20,8 @@
 }
 .aboutus-first p{
     font-weight: 500;
-    font-size: 24px;
-    line-height: 38px;
+    font-size: 20px;
+    line-height: 32px;
     align-self: stretch;
     color: rgba(64, 64, 64, 0.75);
 }
@@ -32,10 +31,13 @@
     height: auto;
     vertical-align: bottom;
     margin: 0;
+    top: 50px;
 }
 
 .aboutus-second{
-    padding: 40px 120px;
+    position: relative;
+    top: -4.5%;
+    padding: 40px 1%;
     gap: 97px;
     background: #1C3CA1;
 }

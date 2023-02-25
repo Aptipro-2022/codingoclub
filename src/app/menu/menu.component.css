@@ -2,7 +2,7 @@
     z-index: 1000;
 }
 .navbar{
-    padding: 0 10%;
+    padding: 0 6%;
     background: #FFFFFF;
     border-radius: 0;
     border-bottom: 1px solid #031544;
@@ -48,7 +48,7 @@ li.active{
 
 .offcanvas-left{
     position: fixed;
-    /* top: 80; */
+    top: 10%;
     left: 0;
     width: 100%;
     height: auto;
@@ -88,7 +88,7 @@ li.active{
 }
 .offcanvas-left.open {
     display: block;
-    transition: all 1s ease;
+    transition: all 1s ease-in-out;
 }
 
 .offcanvas-left .close-button {
@@ -108,7 +108,7 @@ font-weight: 400;
 
 .offcanvas-right{
     position: fixed;
-    /* top: 0; */
+    top: 10%;
     left: 0;
     width: 100%;
     height: auto;
@@ -135,19 +135,26 @@ font-weight: 400;
     font-size: 14px;
     color: #2B32B2;
 }
-#offcanvas-right h4{
+#offcanvas-right a{
     padding: 0;
     margin: 0;
     font-size: 16px;
     color: black;
 }
+#offcanvas-right a:hover{
+    color: blue;
+}
 #offcanvas-right p{
     font-size: 12px;
+}
+a.active{
+    color: blue;
+    font-weight: bold;
 }
 
 
 .slideInOut {
-    transition: transform 0.1s ease;
+    transition: transform 0.3s ease-in-out;
 }
 
 .slideInOut.out {
@@ -163,12 +170,27 @@ font-weight: 400;
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: #606060; /* semi-transparent black */
+    background-color: #606060; 
     opacity: 0.7;
-    z-index: 99; /* make sure it's on top of everything else */
+    z-index: 99; 
 }
 
+.hover-zoom a{
+    color: black;
+    font-weight: 400;
+}
 .hover-zoom:hover{
     transform: scale(1.1);
     transition: all 0.3s ease;
+    cursor: pointer;
 }
+.hover-zoom:hover a{
+    color: #2B32B2;
+}
+.header-white {
+    background-color: white;
+  }
+  
+  .header-grey {
+    background-color: rgb(189, 185, 185);
+  }
