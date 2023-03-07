@@ -3,11 +3,21 @@
 
 <div class="container-fluid" id="welcome-screen">
     <div class="row">
-        <div class="welcome-text">
-            <h1>
-                When everything is personalized and fun today, why isn’t learning?
-            </h1>
+        <div class="col-md-6 col-xs-12 order-2">
+            <div class="welcome-text">
+                <h1>
+                    When everything is personalized and fun today, why isn’t learning?
+                </h1>
+            </div>
         </div>
+        <div class="col-md-6 col-xs-12 order-1" id="welcome-image">
+            <img src="../../assets/homepage/homepage001_mobile.svg" alt="">
+        </div>
+        <div class="col-xs-12 order-3" id="welcome-buttons">
+            <button type="submit">Try Now</button>
+            <button type="submit">Buy Now</button>
+        </div>
+        
         <!-- <div class="col-sm-6 col-md-6 col-xs-12" id="welcome-text">
             <h1 style="font-weight: 800; font-size: 42px; line-height: 90px; color: #404040;">
                 When everything is personalized and fun today, why isn’t learning?
@@ -23,48 +33,48 @@
 <!-- Second screen starts -->
 <div class="container" id="second-screen">
     <div class="row" id="secondscreen-heading">
-        <h2 style="font-size: 32px;">Our Solutions lead the way you learn</h2>
+        <h2>Our Solutions lead the way you learn</h2>
     </div>
-    <div class="row">
-        <div class="col-sm-6 col-md-6 col-xs-12">
+    <div class="row" style="width: 100%;">
+        <div class="col-sm-12 col-md-6 col-12 order-md-1 order-2">
             <div class="row second-left-row hover-zoom">
-                <div class="col-sm-2 col-md-2">
+                <div class="col-sm-2 col-md-2 col-3">
                     <img src="../../assets/Aptipro Icon.jpg" alt="">
                 </div>
-                <div class="col-sm-8 col-md-8">
+                <div class="col-sm-6 col-md-8 col-9">
                     <a href="https://www.aptipro.in" target="_blank"><h3>aptipro.in</h3></a>
                     <p>Learn aptitude at ease & crack interviews like pro</p> 
                 </div>
             </div>
             <div class="row second-left-row hover-zoom">
-                <div class="col-sm-2 col-md-2">
+                <div class="col-sm-2 col-md-2 col-3">
                     <img src="../../assets/SQL Icon.jpg" alt="">
                 </div>
-                <div class="col-sm-8 col-md-8">
+                <div class="col-sm-8 col-md-8 col-9">
                     <a href="https://www.sqlpro.in" target="_blank"><h3>sqlpro.in</h3></a>
                     <p>Learn SQL from experts & get your dream job</p> 
                 </div>
             </div>
             <div class="row second-left-row hover-zoom">
-                <div class="col-sm-2 col-md-2">
+                <div class="col-sm-2 col-md-2 col-3">
                     <img src="../../assets/Java Icon.png" alt="">
                 </div>
-                <div class="col-sm-8 col-md-8">
+                <div class="col-sm-8 col-md-8 col-9">
                     <a href=""><h3>javapro.in</h3></a>
                     <p>Learn Java from experts & become a developer</p> 
                 </div>
             </div>
             <div class="row second-left-row hover-zoom">
-                <div class="col-sm-2 col-md-2">
+                <div class="col-sm-2 col-md-2 col-3">
                     <img src="../../assets/Python Icon.jpg" alt="">
                 </div>
-                <div class="col-sm-8 col-md-8">
+                <div class="col-sm-8 col-md-8 col-9">
                     <a href=""><h3>pypro.in</h3></a>
                     <p>Learn Python from experts & become a developer</p> 
                 </div>
             </div>
         </div>
-        <div class="col-sm-6 col-md-6 col-xs-12" id="secondscreen-image">
+        <div class="col-sm-12 col-md-6 col-xs-12 order-md-2 order-1" id="secondscreen-image">
             <img *ngFor="let image of images; let i = index" [src]="image.src" [class.active]="i === currentImageIndex" alt="">
             <!-- <img src="../../assets/homepage/home page 003.svg" alt=""> -->
         </div>
@@ -76,19 +86,26 @@
 
 <div class="container-fluid" id="third-screen">
     <div class="row">
-        <div class="col-sm-4 col-md-4 col-xs-4" id="third-screen-col1">
+        <div class="col-sm-4 col-md-4 col-xs-4 order-md-1 order-1" id="third-screen-col1">
             <h3 style="font-weight: 600; word-spacing: 2;">ESSENTIALS</h3>
             <p>
                 Behold to witness a community that answers your
                 question as quickly as possible.
             </p>
         </div>
-        <div class="col-sm-8 col-md-8 col-xs-8">
+        <div class="col-sm-8 col-md-8 col-xs-8 order-md-2 order-2 essentials-desktop">
             <img src="../../assets/Team Essentials.jpg" alt="">
             <div class="third-screen-imgtext">
                 <h3>Codingo Community</h3>
                 <h4>Join our community</h4>
             </div>
+        </div>
+        <div class="col-sm-8 col-md-8 col-xs-8 order-md-2 order-2 essentials-mobile">
+            <img src="../../assets/homepage/essentials_mobile.png" alt="">
+            <p>
+                Behold to witness a community that answers your
+                question as quickly as possible.
+            </p>
         </div>
     </div>
 </div>
@@ -138,15 +155,15 @@
 
 <div class="container" id="fifth-screen">
     <div class="row">
-        <div class="col-sm-4 col-md-4 col-xs-12" style="margin-top: 5%;">
+        <div class="col-sm-4 col-md-4 col-xs-12" style="margin: 5% 0;">
              <h4>EVENTS</h4> <br>
-             <h3>Hear from today's fearless builders and innovators</h3> <br>
-             <h5 style="color: #303030; font-size: 16px; font-weight: 500;"><a href="#">Learn more</a></h5>
+             <h3>Hear from today's fearless builders and innovators</h3>
+             <h5><a href="#">Learn more..</a></h5>
         </div>
-        <div class="col-sm-4 col-md-4 col-xs-12">
+        <div class="col-sm-4 col-md-4 col-6 fifth-screen-img">
             <img src="../../assets/homepage/codingoclub.svg" alt="">
         </div>
-        <div class="col-sm-4 col-md-4 col-xs-12">
+        <div class="col-sm-4 col-md-4 col-6 fifth-screen-img">
             <img src="../../assets/Event2.jpg" alt="">
         </div>
     </div>
@@ -158,16 +175,24 @@
 
 <div class="container-fluid" id="sixth-screen">
     <div class="row">
+        <div class="col-12 sixth-screen-second-mobile">
+            <h4 style="text-align: center; font: size 16px;">CAREERS</h4>
+        </div>
         <div class="col-sm-4 col-md-4 col-xs-12">
             <img src="../../assets/homepage/homepage0010 carrers -1.svg" alt="">
         </div>
-        <div class="col-sm-4 col-md-4 col-xs-12">
+        <div class="col-sm-4 col-md-4 col-xs-12 sixth-screen-second">
             <h4 style="text-align: center; font: size 16px;">CAREERS</h4>
             <h3 style="text-align: center; font-size: 28px; font-weight:500;color: #404040;">We can't do it alone</h3>
             <p style="font-size: 16px; line-height:28.13px;color: rgba(64, 64, 64, 0.8); text-align: left; font-weight: 400;"><b>We have an ambitious road ahead, and we’re looking for people to join our global team to help shape the future of Codingo.</b></p> <br>
             <button type="submit" class="hover-zoom">Learn More <i class="fa fa-arrow-right" style="margin-left: 2%;"></i></button>
         </div>
-        <div class="col-sm-4 col-md-4 col-xs-12">
+        <div class="col-12 sixth-screen-third-mobile">
+            <h3 style="text-align: center; font-size: 18px; font-weight:500;color: #404040;">We can't do it alone</h3>
+            <p style="font-size: 14px; line-height:21px;color: rgba(64, 64, 64, 0.8); text-align: left; font-weight: 400;"><b>We have an ambitious road ahead, and we’re looking for people to join our global team to help shape the future of Codingo.</b></p> <br>
+            <button type="submit" class="hover-zoom">Learn More <i class="fa fa-arrow-right" style="margin-left: 2%;"></i></button>
+        </div>
+        <div class="col-sm-4 col-md-4 col-xs-12 sixth-screen-third">
             <img src="../../assets/homepage/homepage 0010 carrers-2.svg" alt="">
         </div>
     </div>

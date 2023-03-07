@@ -6,27 +6,66 @@
     background: #FFFFFF;
     margin: 0;
     height: auto;
+    overflow-x: hidden;
 }
 
 /* welcome-screen styles */
-.welcome-text{
-    background-image: url("../../assets/homepage/homepage001.svg");
-    background-size: 100% 100%;
-    background-repeat: no-repeat;
-    background-position: 150px 10px;
-    height: 70vh;
-    padding-top: 20px;
+@media (min-width: 768px) {
+    #welcome-screen{
+        background-image: url("../../assets/homepage/homepage001.svg");
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+        background-position: 150px 10px;
+    }
+    .welcome-text{
+    
+        height: 70vh;
+        padding-top: 20px;
+    }
+    .welcome-text h1{
+        position: relative;
+        width: 100%;
+        top: 25%;
+        left: 10%;
+        font-size: 32px;
+        line-height: 60px;
+        font-weight: 800;  
+        color: #404040;
+    }
+    #welcome-image{
+        display: none;
+    }
 }
-.welcome-text h1{
-    position: relative;
-    width: 30%;
-    top: 25%;
-    left: 10%;
-    font-size: 32px;
-    line-height: 60px;
-    font-weight: 800;  
-    color: #404040;
+@media (max-width: 768px) {
+    #welcome-image{
+        text-align: center;
+        align-items: center;
+        margin: 15% auto 0 auto;
+    }
+    .welcome-text h1{
+        text-align: center;
+        position: relative;
+        width: 100%;
+        font-size: 20px;
+        line-height: 23px;
+        font-weight: 800;  
+        color: #404040;
+        margin-top: 10%;
+    }
+    #welcome-buttons{
+        align-items: center;
+        text-align: center;
+    }
+    #welcome-buttons button{
+        margin: 5% 2.5%;
+        border: 0;
+        background: #1C3CA1;
+        border-radius: 4px;
+        color: white;
+        padding: 2.5% 5%;
+    }
 }
+
 /* welcome screen styles end */
 
 
@@ -35,6 +74,9 @@
 #secondscreen-heading{
     text-align: center;
     padding: 2% 0 5% 0;
+}
+#secondscreen-heading h2{
+    font-size: 32px;
 }
 #second-screen{
     margin: 0 auto;
@@ -72,14 +114,35 @@
     color: black;
     text-decoration: none;
 }
-.hover-zoom:hover{
-    transform: scale(1.1);
-    transition: all 0.3s ease;
-}
-.hover-zoom:hover a{
-    color: blue;
+
+@media (min-width:768px) {
+    .hover-zoom:hover{
+        transform: scale(1.1);
+        transition: all 0.3s ease;
+    }
+    .hover-zoom:hover a{
+        color: blue;
+    }
 }
 
+@media (max-width: 768px) {
+    #secondscreen-heading{
+        text-align: center;
+        padding: 1% 0;
+    }
+    #secondscreen-heading h2{
+        font-size: 24px;
+        margin: 0;
+        padding: 0;
+    }
+    #secondscreen-image{
+        height: 80vh;
+        border-radius: 10px;
+    }
+    .second-left-row{
+        width: 100%;
+    }
+}
 /* Second screen styles ends */
 
 /* third screen styles */
@@ -90,10 +153,7 @@
     background: linear-gradient(180deg, #FFFF94 0%, rgba(241, 241, 241, 0) 100%);
 }
 
-#third-screen-col1{
-    height: auto;
-    top: 110px;
-}
+
 #third-screen-col1 h3{
     font-size: 16px;
     background: linear-gradient(45.58deg, #2B32B2 3.16%, #1488CC 95.98%); 
@@ -132,6 +192,47 @@
     color: #303030;
 }
 
+@media (max-width:768px) {
+    #third-screen{
+        height: 70vh;
+        padding: 1%;
+        background: white;
+    }
+    .essentials-desktop{
+        display: none;
+    }
+    #third-screen-col1 h3{
+        margin-bottom: 7.5%;
+    }
+    #third-screen-col1 p{
+        display: none;
+    }
+    .essentials-mobile img{
+        width: 100%;
+        height: auto;
+        padding: 0;
+        margin: 0;
+    }
+    .essentials-mobile p{
+        margin-top: 10%;
+        color: #6A737D;
+        font-weight: 700;
+        font-size: 16px;
+    }
+}
+@media (min-width:768px) {
+    .essentials-mobile{
+        display: none;
+    }
+    #third-screen-col1{
+        height: auto;
+        top: 110px;
+    }
+    .essentials-mobile p{
+        display: none;
+    }
+}
+
 /* third screen styles */
 
 /* Fourth Screen styles */
@@ -168,13 +269,47 @@
     height: 350px;
     margin: auto;
 }
-.hover-box{
-    transform: scale(0.9);
-    box-shadow: 0px 0px 0px rgba(0, 0, 0, 0.5);
-    transition: box-shadow 0.4s ease-in-out;
-} 
-.hover-box:hover{
-    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5);
+
+@media (min-width:768px) {
+    .hover-box{
+        transform: scale(0.9);
+        box-shadow: 0px 0px 0px rgba(0, 0, 0, 0.5);
+        transition: box-shadow 0.4s ease-in-out;
+    } 
+    .hover-box:hover{
+        box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5);
+    }
+}
+@media (max-width: 768px) {
+    #fourth-screen{
+        padding: 2.5% 0;
+    }
+    #fourth-screen-cols{
+        background: linear-gradient(55.7deg, #DFE9F3 0%, #FFFFFF 100%);
+        border-radius: 8px;
+        margin: 2.5% 0;
+        padding: 2.5% 5%;
+    }
+    #fourth-screen-cols h3{
+        font-size: 16px;
+        font-weight: 500;
+        color: #1B1F23;
+    }
+    #fourth-screen-cols img{
+        width: 300px;
+        height: 250px;
+        margin: auto;
+    }
+    #fourth-screen-cols p{
+        font-size: 14px;
+        text-align: center;
+    }
+    #fourth-screen-cols a{
+        text-decoration: none;
+        font-size: 16px;
+        font-weight: 600;
+        color: #1C3CA1;
+    }
 }
 /* Fourth Screen styles ends */
 
@@ -199,6 +334,11 @@
     line-height: 47px;
     color: #404040;
 }
+#fifth-screen h5{
+    color: #303030; 
+    font-size: 16px; 
+    font-weight: 500;
+}
 #fifth-screen img{
     width: 350px;
     height: 350px;
@@ -209,6 +349,33 @@
 }
 #fifth-screen h3,#fifth-screen h4,#fifth-screen h5{
     margin: 0;
+}
+@media (max-width: 768px) {
+    #fifth-screen h3{
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 16px;
+        color: #6A737D;
+    }
+    #fifth-screen h5{
+        color: blue; 
+        font-size: 16px; 
+        font-weight: 500;
+    }
+    #fifth-screen a{
+        text-decoration: none;
+        color: blue;
+    }
+    .fifth-screen-img{
+        padding: 2%;
+        align-items: center;
+        text-align: center;
+        margin: auto;
+    }
+    #fifth-screen img{
+        width: 160px;
+        height: 150px;
+    }
 }
 
 /* Fifth screen styles */
@@ -256,6 +423,43 @@
     background: #1C3CA1;
     border-radius: 4px;
     border-width: 0;
+}
+@media (max-width: 768px) {
+    .sixth-screen-second{
+        display: none;
+    }
+    .sixth-screen-second-mobile h4{
+        font-weight: 600;
+        font-size: 18px;
+        line-height: 32px;
+        text-transform: uppercase;
+        background: linear-gradient(45.58deg, #2B32B2 3.16%, #1488CC 95.98%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+    }
+    .sixth-screen-third{
+        display: none;
+    }
+    #sixth-screen a{
+        text-decoration: none;
+    }
+    #sixth-screen button{
+        width: 110px;
+        height: 30px;
+        font-size: 12px;
+        color: white;
+        padding: 6px 16px;
+        gap: 10px;
+        background: #1C3CA1;
+        border-radius: 4px;
+        border-width: 0;
+    }
+}
+@media (min-width: 768px) {
+    .sixth-screen-second-mobile{
+        display: none;
+    }
 }
 
 /* Sixth screen styles */
