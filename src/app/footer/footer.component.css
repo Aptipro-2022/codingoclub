@@ -32,3 +32,62 @@
     font-size: 16px;
     line-height: 40px;
 }
+.newsletter-email{
+    width: 80%; 
+    height:32px; 
+    background: #FFFFFF; 
+    border-radius: 10px 0px 0px 10px; 
+    border-width: 0; 
+    color:black; 
+    font-size:16px; 
+    padding: 1% 2.5%;
+}
+.newsletter-submit{
+    background: #E81F3D; 
+    border-radius: 0px 10px 10px 0px; 
+    color:white;
+    font-size:16px; 
+    height:32px; 
+    width: 20%; 
+    border-width:0;
+}
+@media (max-width: 768px) {
+    #footer{
+        padding: 5%;
+    }
+    .footer-heading p{
+        font-size: 10px;
+        line-height: 15px;
+    }
+    .footer-newsletter{
+        font-size: 10px;
+        text-align: center;
+    }
+    .newsletter-email{
+        width: 70%; 
+        height:32px; 
+        background: #FFFFFF; 
+        border-radius: 10px 0px 0px 10px; 
+        border-width: 0; 
+        color:black; 
+        font-size:12px; 
+        padding: 1% 2.5%;
+    }
+    .newsletter-submit{
+        background: #E81F3D; 
+        border-radius: 0px 10px 10px 0px; 
+        color:white;
+        font-size:12px; 
+        height:32px; 
+        width: 30%; 
+        border-width:0;
+    }
+    .footer-bottom h3{
+        margin: 2% 0;
+        font-size: 16px;
+    }
+    .footer-bottom a{
+        font-size: 14px;
+        line-height: 16px;
+    }
+}
