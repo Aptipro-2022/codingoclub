@@ -35,6 +35,9 @@
     #welcome-image{
         display: none;
     }
+    #welcome-buttons{
+        display: none;
+    }
 }
 @media (max-width: 768px) {
     #welcome-image{
