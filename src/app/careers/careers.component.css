@@ -2,12 +2,14 @@
     margin: 0;
     padding: 0;
 }
+
 .careers-first{
     margin-top: 60px;
     background: linear-gradient(180deg, #94A6C1 3.56%, #FFFFFF 21.32%);
     overflow: hidden;
     height: 640px;
 }
+
 .careers-image1{
     position: absolute;
     height: auto;
@@ -216,6 +218,195 @@
 
 /* Image tiles style ends  */
 
+@media (max-width: 768px) {
+    .careers-content{
+        padding-top: 30%;
+        width: 100%;
+        text-align: center;
+    }
+    .careers-content h3{
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 28.13px;
+        background: linear-gradient(45.58deg, #2B32B2 3.16%, #1488CC 95.98%);
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+    .careers-image1{
+        position: absolute;
+        height: auto;
+    }
+    .careers-image1 img{
+        position: relative;
+        top: 100px;
+        width: 100%;
+        height: auto;
+        margin: 0;
+        padding: 0;
+        z-index: 10;
+    }
+
+    /* Image tiles for mobile version starts */
+    .image-tiles1{
+        position: absolute;
+        margin: 0;
+        padding: 0;
+        width: fit-content;
+    }
+    .image-tiles1 img{
+        position: relative;
+        top: 70px;
+        left: 120px;
+        width: 58px;
+        height: 58px;
+    }
+    
+    .image-tiles2{
+        position: absolute;
+        margin: 0;
+        padding: 0;
+        width: fit-content;
+    }
+    .image-tiles2 img{
+        position: relative;
+        top: -480px;
+        left: 275px;
+        width: 44px;
+        height: 44px;
+    }
+    
+    .image-tiles3{
+        position: absolute;
+        margin: 0;
+        padding: 0;
+        width: fit-content;
+    }
+    .image-tiles3 img{
+        position: relative;
+        top: -520px;
+        left: 10px;
+        width: 79px;
+        height: 79px;
+    }
+    
+    .image-tiles4{
+        position: absolute;
+        margin: 0;
+        padding: 0;
+        width: fit-content;
+    }
+    .image-tiles4 img{
+        position: relative;
+        top: -550px;
+        left: 345px;
+        width: 54px;
+        height: 55px;
+    }
+    
+    .image-tiles5{
+        position: absolute;
+        margin: 0;
+        padding: 0;
+        width: fit-content;
+    }
+    .image-tiles5 img{
+        position: relative;
+        top: 0px;
+        left: 325px;
+        width: 66px;
+        height: 66px;
+    }
+    
+    .image-tiles6{
+        position: absolute;
+        margin: 0;
+        padding: 0;
+        width: fit-content;
+    }
+    .image-tiles6 img{
+        position: relative;
+        top: 30px;
+        left: 175px;
+        width: 37px;
+        height: 37px;
+    }
+    
+    .image-tiles7{
+        position: absolute;
+        margin: 0;
+        padding: 0;
+        width: fit-content;
+    }
+    .image-tiles7 img{
+        position: relative;
+        top: -10px;
+        left: -30px;
+        width: 60px;
+        height: 60px;
+    }
+    
+    .image-tiles8{
+        display: none;
+        position: absolute;
+        margin: 0;
+        padding: 0;
+        width: fit-content;
+    }
+    .image-tiles8 img{
+        position: relative;
+        top: -50px;
+        left: 10px;
+        width: 40px;
+        height: 40px;
+    }
+    
+    .image-tiles9{
+        display: none;
+        position: absolute;
+        margin: 0;
+        padding: 0;
+        width: fit-content;
+    }
+    .image-tiles9 img{
+        position: relative;
+        top: -340px;
+        left: 1050px;
+        width: 40px;
+        height: 40px;
+    }
+    
+    .image-tiles10{
+        display: none;
+        position: absolute;
+        margin: 0;
+        padding: 0;
+        width: fit-content;
+    }
+    .image-tiles10 img{
+        position: relative;
+        top: -360px;
+        left: 1000px;
+        width: 20px;
+        height: 20px;
+    }
+    
+    .image-tiles11{
+        position: absolute;
+        margin: 0;
+        padding: 0;
+        width: fit-content;
+    }
+    .image-tiles11 img{
+        position: relative;
+        top: -230px;
+        left: 390px;
+        width: 35px;
+        height: 35px;
+    }
+
+    /* Image tiles for mobile version ends */
+}
+
 .careers-second{
     position: relative;
     background: linear-gradient(181.72deg, #FFFFFF 44.94%, #94A6C1 105.19%);
@@ -246,4 +437,9 @@
     font-size: 32px;
     line-height: 70px;
     color: #404040;
+}
+@media (max-width: 768px) {
+    .careers-second{
+        margin: 58% 0 0 0;
+    }
 }
