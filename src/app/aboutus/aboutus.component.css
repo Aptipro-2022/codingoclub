@@ -34,6 +34,26 @@
     top: 50px;
 }
 
+@media (max-width: 768px) {
+    .aboutus-first{
+        height: auto;
+        padding: 15% 5%;
+    }
+    .aboutus-first h4{
+        font-size: 20px;   
+    }
+    .aboutus-first h2{
+        font-size: 18px;
+    }
+    .aboutus-first p{
+        font-size: 18px;
+        line-height: 21.09px;
+    }
+    .aboutus-first img{
+        display: none;
+    }
+}
+
 .aboutus-second{
     position: relative;
     top: -4.5%;
@@ -52,7 +72,28 @@
     font-size: 16px;
     margin-top: 10%;
 }
-
+@media (max-width: 768px) {
+    .aboutus-second{
+        top: 0;
+        
+    }
+    .aboutus-second-cols{
+        align-items: center;
+        text-align: center;
+        margin: 5% 0;
+    }
+    .aboutus-second img{
+        width: 100.47px;
+        height: 106.72px;
+    }
+    .icons-desc{
+        align-items: center;
+        text-align: center;
+        width: 50%;
+        font-size: 20px;
+        margin: 5% auto;
+    }
+}
 
 .aboutus-third{
     padding: 80px 120px;
@@ -81,6 +122,23 @@
     line-height: 28px;
     color: #084F8E;
 }
+@media (max-width: 768px) {
+    .aboutus-third{
+        padding: 40px 20px;
+    }
+    .aboutus-third h3{
+        font-size: 18px;
+        font-weight: 700;
+    }
+    .aboutus-third p{
+        font-size: 12px;
+        font-weight: 700;
+    }
+    .aboutus-third a{
+        font-size: 14px;
+        font-weight: 700;
+    }
+}
 
 .aboutus-fourth{
     padding: 5% 0;
@@ -104,6 +162,14 @@
     width: 180px;
     height: 180px;
 }
+.aboutus-fourth-p{
+    font-size: 22px;
+    margin-top: 10%; 
+    font-weight: 450; 
+    line-height: 38px; 
+    color: #404040; 
+    padding-right:5%;
+}
 .tiles-text{
     font-weight: 400;
     font-size: 16px;
@@ -111,4 +177,36 @@
     text-align: center;
     color: #404040;
     width: 180px;
+}
+@media (max-width: 768px) {
+    .aboutus-fourth{
+        padding: 40px 20px;
+    }
+    .aboutus-fourth h2{
+        font-size: 20px;
+        line-height: 23.44px;
+    }
+    .aboutus-fourth-p{
+        font-size: 16px;
+        margin-top: 10%; 
+        font-weight: 500; 
+        line-height: 19px; 
+        color: #404040; 
+        padding: 0;
+    }
+    .aboutus-fourth img{
+        width: 130px;
+        height: 130px;
+        align-items: center;
+        margin: auto;
+    }
+    .tiles-text{
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 16.41px;
+        text-align: center;
+        margin: auto;
+        color: #404040;
+        width: 180px;
+    }
 }
