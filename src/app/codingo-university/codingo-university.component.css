@@ -30,12 +30,56 @@
     font-size: 18px;
     line-height: 28px;
 }
+.order-1{
+    display:flex; 
+    justify-content: flex-end;
+}
 .university-first img{
     margin-top: 20%;
     width: 70%;
     height: 70%;
     /* width: 386px;
     height: 376px; */
+}
+@media (max-width: 768px) {
+    .university-first img{
+        margin: 30% 0;
+    }
+    .order-1{
+        justify-content: center;
+    }
+    .order-2{
+        background: #EBEBEB;
+        padding: 20% 10%;
+    }
+    .university-first h1{
+        font-size: 18px;
+        line-height: 30px;
+        font-weight: 800;
+        color: #404040;
+        text-align: center;
+    }
+    .university-first p{
+        color: rgba(64, 64, 64, 0.75);
+        font-size: 16px;
+        line-height: 19px;
+        font-weight: 500;
+        text-align: center;
+    }
+    .university-first button{
+        background: #1488CC;
+        border-radius: 8px;
+        border-width: 0;
+        padding: 8px 16px;
+        gap: 8px;
+        color: #FFFFFF;
+        font-weight: 500;
+        font-size: 12px;
+        line-height: 14px;
+        margin: auto;
+        display: flex;
+        justify-content: center;
+    }
 }
 
 .university-second{
@@ -67,4 +111,32 @@
 .bottom-image img{
     max-width: 100%;
     object-fit: cover;
+}
+@media (max-width: 768px) {
+    .university-second{
+        margin-top: 55%;
+        padding: 0;
+    }
+    .university-second img{
+        height: 50px;
+    }
+    .university-second h3{
+        color: #303030;
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 30px;
+        padding: 0 5%;
+        text-align: center;
+    }
+    .university-second p{
+        color: rgba(64, 64, 64, 0.8);
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 18.75px;
+        margin: 5% 0;
+        text-align: center;
+    }
+    .bottom-image{
+        margin-top: 20%;
+    }
 }
