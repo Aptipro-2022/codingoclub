@@ -460,6 +460,9 @@
     }
 }
 @media (min-width: 768px) {
+    .sixth-screen-third-mobile{
+        display: none;
+    }
     .sixth-screen-second-mobile{
         display: none;
     }

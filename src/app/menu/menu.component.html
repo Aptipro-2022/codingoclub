@@ -1,6 +1,6 @@
 
 <header class="header">
-    <nav class="navbar container-fluid navbar-expand-md fixed-top" [ngClass]="headerClass">
+    <nav class="navbar container-fluid navbar-expand-md fixed-top menu-desktop" [ngClass]="headerClass">
         <a href="#" class="navbar-brand"><img src="../../assets/Codingo Logo.png" alt=""></a>
         <button class="navbar-toggler ml-auto navbar-toggler-right" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar" (click)="toggleNavbar()" style="float: right; margin-left:auto; margin-right:5px; color:white;">
             <!-- <span class="navbar-toggler-icon"></span> -->
@@ -157,6 +157,185 @@
                 <li class="nav-item" routerLinkActive="active">
                     <a routerLink="/login" class="nav-link">Login</a>
                 </li>
+            </ul>
+        </div>
+    </nav>
+    <nav class="navbar container-fluid navbar-expand-md fixed-top menu-mobile">
+        <a href="#" class="navbar-brand"><img src="../../assets/Codingo Logo.png" alt=""></a>
+        <button class="navbar-toggler ml-auto navbar-toggler-right" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar" (click)="toggleNavbar()" style="float: right; margin-left:auto; margin-right:5px; color:white;">
+            <div class="bar1"></div>
+            <div class="bar2"></div>
+            <div class="bar3"></div>
+        </button>
+        <div class="collapse navbar-collapse" id="collapsibleNavbar" [ngClass]="{ 'show': navbarOpen }">
+            <ul class="navbar-nav mx-auto">
+                
+                <li class="nav-item">
+                    <a class="nav-link dropdown-toggle" data-bs-toggle="collapse" href="#products" role="button" aria-expanded="false" aria-controls="products">Products</a>
+                    <!-- Dropdown menu for products -->
+                    
+                    <div class="collapse" id="products">
+                        <h3>FEATURED</h3>
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item">
+                                <a href="www.aptipro.in" target="_blank">
+                                    <div class="d-flex align-items-center">
+                                        <img src="../../assets/Aptipro Icon.jpg" alt="" style="max-height: 50px; margin-right: 10px;">
+                                        <div>
+                                            <h4 class="mb-0">aptipro.in</h4>
+                                            <p class="mb-0">Learn Aptitude from experts</p>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="list-group-item">
+                                <a href="www.sqlpro.in" target="_blank">
+                                    <div class="d-flex align-items-center">
+                                        <img src="../../assets/SQL Icon.jpg" alt="" style="max-height: 50px; margin-right: 10px;">
+                                        <div>
+                                            <h4 class="mb-0">sqlpro.in</h4>
+                                            <p class="mb-0">End-to-end Figmateams</p>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                        </ul>
+                        <h3>OUR UPCOMING PRODUCTS</h3>
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item">
+                                <a href="#" target="_blank">
+                                    <div class="d-flex align-items-center">
+                                        <img src="../../assets/Java Icon.png" alt="" style="max-height: 50px; margin-right: 10px;">
+                                        <div>
+                                            <h4 class="mb-0">javapro.in</h4>
+                                            <p class="mb-0">End-to-end Figmateams</p>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="list-group-item">
+                                <a href="#" target="_blank">
+                                    <div class="d-flex align-items-center">
+                                        <img src="../../assets/Python Icon.jpg" alt="" style="max-height: 50px; margin-right: 10px;">
+                                        <div>
+                                            <h4 class="mb-0">pypro.in</h4>
+                                            <p class="mb-0">End-to-end Figmateams</p>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link dropdown-toggle" data-bs-toggle="collapse" href="#support" role="button" aria-expanded="false" aria-controls="support">Support</a>
+                    <!-- Dropdown menu for support -->
+                    
+                    <div class="collapse" id="support">
+                        <h3>SUPPORT SERVICES</h3>
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item">
+                                <a routerLink="/enterprise-support">
+                                    <div class="d-flex align-items-center">
+                                        <div>
+                                            <h4 class="mb-0">Enterprise Support</h4>
+                                            <p class="mb-0">Personal support for large teams</p>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="list-group-item">
+                                <a routerLink="/partner-support">
+                                    <div class="d-flex align-items-center">
+                                        <div>
+                                            <h4 class="mb-0">Partner Support</h4>
+                                            <p class="mb-0">Trusted third-party consultant</p>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="list-group-item">
+                                <a routerLink="/codingo-support">
+                                    <div class="d-flex align-items-center">
+                                        <div>
+                                            <h4 class="mb-0">Codingo Support</h4>
+                                            <p class="mb-0">Learn SQL from experts & get your dream job</p>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                        </ul>
+                        <h3>LEARN & CONNECT</h3>
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item">
+                                <a routerLink="/aboutus">
+                                    <div class="d-flex align-items-center">
+                                        <div>
+                                            <h4 class="mb-0">About US</h4>
+                                            <p class="mb-0">Our mission and history</p>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="list-group-item">
+                                <a routerLink="/careers">
+                                    <div class="d-flex align-items-center">
+                                        <div>
+                                            <h4 class="mb-0">Careers</h4>
+                                            <p class="mb-0">Job Opening, values, and more</p>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="list-group-item">
+                                <a routerLink="/codingo-university">
+                                    <div class="d-flex align-items-center">
+                                        <div>
+                                            <h4 class="mb-0">Codingo University</h4>
+                                            <p class="mb-0">Training and certifications for all skill levels</p>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="list-group-item">
+                                <a routerLink="">
+                                    <div class="d-flex align-items-center">
+                                        <div>
+                                            <h4 class="mb-0">Codingo Community</h4>
+                                            <p class="mb-0">A forum for connecting, sharing, and learning</p>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                        </ul>
+                        <h3>WORK LIFE BLOG</h3>
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item">
+                                <a routerLink="/codingo-support">
+                                    <div class="d-flex align-items-center">
+                                        <div>
+                                            <h4 class="mb-0">Codingo Community</h4>
+                                            <p class="mb-0">Stories on culture, tech, teams, and tips</p>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+
+                <li class="nav-item" routerLinkActive="active">
+                    <a routerLink="/login" class="nav-link">Login</a>
+                </li>
+                <li class="nav-item" routerLinkActive="active">
+                    <a routerLink="/trynow" class="nav-link" style="background: #2B32B2;color:white;border-radius: 8px; text-align: center; width: 100%;">Try now</a>
+                </li>
+                <li class="nav-item" routerLinkActive="active">
+                    <a routerLink="/buynow" class="nav-link">Buy Now</a>
+                </li>
+                
+                
             </ul>
         </div>
     </nav>
