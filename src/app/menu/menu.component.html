@@ -2,13 +2,13 @@
 <header class="header">
     <nav class="navbar container-fluid navbar-expand-md fixed-top menu-desktop" [ngClass]="headerClass">
         <a href="#" class="navbar-brand"><img src="../../assets/Codingo Logo.png" alt=""></a>
-        <button class="navbar-toggler ml-auto navbar-toggler-right" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar" (click)="toggleNavbar()" style="float: right; margin-left:auto; margin-right:5px; color:white;">
-            <!-- <span class="navbar-toggler-icon"></span> -->
+        
+        <!-- <button class="navbar-toggler ml-auto navbar-toggler-right" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar" (click)="toggleNavbar()" style="float: right; margin-left:auto; margin-right:5px; color:white;">
             <div class="bar1"></div>
             <div class="bar2"></div>
             <div class="bar3"></div>
-        </button>
-        <div class="collapse navbar-collapse" id="collapsibleNavbar" [ngClass]="{ 'show': navbarOpen }">
+        </button>   -->
+        <div class="collapse navbar-collapse">
             <ul class="navbar-nav mx-auto"> 
                 
                 <!-- OffCanvas Starts -->
@@ -162,7 +162,7 @@
     </nav>
     <nav class="navbar container-fluid navbar-expand-md fixed-top menu-mobile">
         <a href="#" class="navbar-brand"><img src="../../assets/Codingo Logo.png" alt=""></a>
-        <button class="navbar-toggler ml-auto navbar-toggler-right" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar" (click)="toggleNavbar()" style="float: right; margin-left:auto; margin-right:5px; color:white;">
+        <button class="navbar-toggler ml-auto navbar-toggler-right" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar" style="float: right; margin-left:auto; margin-right:5px; color:white;" (click)="toggleNavbar()">
             <div class="bar1"></div>
             <div class="bar2"></div>
             <div class="bar3"></div>
@@ -171,10 +171,10 @@
             <ul class="navbar-nav mx-auto">
                 
                 <li class="nav-item">
-                    <a class="nav-link dropdown-toggle" data-bs-toggle="collapse" href="#products" role="button" aria-expanded="false" aria-controls="products">Products</a>
+                    <a class="nav-link dropdown-toggle" data-bs-toggle="collapse" href="#products" role="button" aria-expanded="false" aria-controls="products" (click)="toggleProduct()">Products</a>
                     <!-- Dropdown menu for products -->
                     
-                    <div class="collapse" id="products">
+                    <div class="collapse" id="products" [ngClass]="{ 'show': productOpen }">
                         <h3>FEATURED</h3>
                         <ul class="list-group list-group-flush">
                             <li class="list-group-item">
@@ -229,10 +229,10 @@
                 </li>
 
                 <li class="nav-item">
-                    <a class="nav-link dropdown-toggle" data-bs-toggle="collapse" href="#support" role="button" aria-expanded="false" aria-controls="support">Support</a>
+                    <a class="nav-link dropdown-toggle" data-bs-toggle="collapse" href="#support" role="button" aria-expanded="false" aria-controls="support" (click)="toggleSupport()">Support</a>
                     <!-- Dropdown menu for support -->
                     
-                    <div class="collapse" id="support">
+                    <div class="collapse" id="support" [ngClass]="{ 'show': supportOpen }">
                         <h3>SUPPORT SERVICES</h3>
                         <ul class="list-group list-group-flush">
                             <li class="list-group-item">

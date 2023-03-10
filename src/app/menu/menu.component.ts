@@ -1,6 +1,7 @@
 import { Component, OnInit, HostListener } from '@angular/core';
 import * as $ from 'jquery';
 import { trigger, state, style, transition, animate } from '@angular/animations';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { Router } from '@angular/router';
 
 @Component({
@@ -25,8 +26,19 @@ export class MenuComponent implements OnInit {
 
   public isLeftMenuOpen = false;
   public isRightMenuOpen = false;
-  navbarOpen = false;
+  public navbarOpen = false;
+  productOpen = false;
+  supportOpen = false;
 
+  toggleProduct(){
+    this.productOpen = !this.productOpen;
+  }
+  toggleSupport(){
+    this.supportOpen = !this.supportOpen;
+  }
+  public toggleNavbar() {
+    this.navbarOpen = !this.navbarOpen;
+  }
   public toggleLeftOffcanvas() {
     this.isLeftMenuOpen = !this.isLeftMenuOpen;
   }
@@ -40,9 +52,7 @@ export class MenuComponent implements OnInit {
     this.isRightMenuOpen = false;
   }
   
-  toggleNavbar(){
-    this.navbarOpen = !this.navbarOpen;
-  }
+  
 
   constructor(private router: Router) { }
 
